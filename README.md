@@ -1,5 +1,2 @@
-# Some userful Shell scripts
-
-| Script | Description |
-| :--- | :--- |
-| [IP-ping](iping.sh) | Check IP-addresses accessing from list |
+# Desine sperare qui hic intras
+*Abandon All Hope, Ye Who Enter Here*
