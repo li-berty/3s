@@ -5,8 +5,8 @@ mkdir -p ~/desktop ~/downloads ~/templates ~/public ~/documents ~/music ~/pictur
 xdg-user-dirs-update --set DESKTOP ~/desktop
 xdg-user-dirs-update --set DOWNLOAD ~/downloads
 xdg-user-dirs-update --set TEMPLATES ~/templates
-xdg-user-dirs-update --set PUBLICSHARE ~/documents
-xdg-user-dirs-update --set DOCUMENTS ~/templates
+xdg-user-dirs-update --set PUBLICSHARE ~/public
+xdg-user-dirs-update --set DOCUMENTS ~/documents
 xdg-user-dirs-update --set MUSIC ~/music
 xdg-user-dirs-update --set PICTURES ~/pictures
 xdg-user-dirs-update --set VIDEOS ~/videos
