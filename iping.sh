@@ -1,6 +1,6 @@
 #!/bin/bash
 
-R="\e[1;31m" G="\e[1;32m" Y="\e[1;33m" N="\e[0m"
+R='\e[1;31m' G='\e[1;32m' Y='\e[1;33m' N='\e[0m'
 echo -e $Y"Welcome, $(whoami | sed 's/^./\U&\E/')!" $N
 
 for i in `cat IP.list`
