@@ -45,5 +45,4 @@ do
 	fi
 done
 echo -e $Y"Issuing Bank:" $G"$bank"$N
-
 #echo $digit, $iin, $bank >>card.csv
