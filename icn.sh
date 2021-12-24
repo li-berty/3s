@@ -12,7 +12,6 @@ do
 
 	if [[ $length != 15 && $length != 16 && $length != 18 && $length != 19 ]]; then
 		echo -e $R"$number - incorrect Card Number! Try again."$N
-		
 	else
 		break
 	fi
