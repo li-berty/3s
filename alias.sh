@@ -1,8 +1,16 @@
 #!/bin/bash
 # Creating permanent executable aliases
 
+R='\e[1;31m' G='\e[1;32m' Y='\e[1;33m' N='\e[0m'
+
 set=~/.bash_aliases
-#set=/etc/bash.bashrc
+#set=/etc/bash.bashrc; sys=/etc/bash.bashrc
+
+if [[ $set = $sys ]]; then
+	if [ $EUID -ne 0 ]; then
+		echo -e $R"Run this script as root (sudo)"$N; exit
+	fi
+fi
 
 cat  >> $set << 'EOF'
 # Alias definitions
@@ -17,3 +25,5 @@ alias wfp="sudo egrep -h -s -A 9 --color -T 'ssid=' /etc/NetworkManager/system-c
 alias speed="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 
 EOF
+
+echo -e $Y"Permanent executable aliases was created in fale" $G"$set"$N
