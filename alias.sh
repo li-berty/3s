@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 set=~/.bash_aliases
 #set=/etc/bash.bashrc
