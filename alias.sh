@@ -4,7 +4,7 @@
 set=~/.bash_aliases
 #set=/etc/bash.bashrc
 
-cat  > $set << 'EOF'
+cat  >> $set << 'EOF'
 # Alias definitions
 
 alias apt="sudo apt"
