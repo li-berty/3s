@@ -3,6 +3,7 @@
 | Script | Description |
 | :--- | :--- |
 | [Aliases](alias.sh) | Creating permanent executable aliases |
+| [Esi](esi.sh) | Extract system information |
 | [Identifying Card Number](icn.sh) | Check issuing bank and bank identification number |
 | [IP-ping](iping.sh) | Check IP-addresses accessing from list |
 | [Xdg-User-Dirs](xudu.sh) | Set the user directories with the given names |
