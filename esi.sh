@@ -47,7 +47,7 @@ printf " %-16s %s\n" "[Interface]" "[IP Address]"; ip address | grep "inet " | a
 printf " %-16s " "Public"; dig +short myip.opendns.com @resolver1.opendns.com 2> /dev/null
 echo
 echo "<--- Open Ports --->"
-printf " %-8s %-24s %s\n" "[Type]" "[Address]" "[PID/Program]"; netstat -tulpn 2> /dev/null | grep "LISTEN" | awk '{printf " %-8s %-24s %s\n", $1, $4, F}' 2> /dev/null
+printf " %-8s %-24s %s\n" "[Type]" "[Address]" "[PID/Program]"; netstat -tulpn 2> /dev/null | grep "LISTEN" | awk '{printf " %-8s %-24s %s\n", $1, $4, $NF}' 2> /dev/null
 echo
 echo "<--- List Of All Users --->"
 printf " %-24s %8s %8s   %s\n" "[Shell]" "[GID]" "[UID]" "[User]"; awk -F ':' '{printf " %-24s %8s %8s   %s\n", $NF, $3, $4, $1}' /etc/passwd | sort 2> /dev/null
