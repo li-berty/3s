@@ -4,7 +4,6 @@ clear
 R='\e[1;31m' G='\e[1;32m' Y='\e[1;33m' N='\e[0m'
 echo -e $R"
 WARNING :
-WARNING :
 This tool is only for educational purpose.
 If you use this tool for other purposes except education,
 we will not be responsible in such cases.
