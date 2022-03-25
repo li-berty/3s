@@ -30,19 +30,19 @@ elif [[ $key = 2 ]]; then
 	exe=json
 fi
 
-for target in `cat $dir/IP.list`	#read IP list from file
+for target in `cat $dir/IP.list`						#read IP list from file
 do  
-	if ping -c1 $target &> /dev/null; then						#find out if the server is working
-		echo -e $G"$target is UP"$N
-		ip=`ping -c1 $target | head -1 | awk '{print $3}' | tr -d '()'`
-		curl https://ipapi.co/$ip/$exe/ >> $dir/ip.$exe; echo >> $dir/ip.$exe	#write information about target to file
-	else
-		echo -e $R"$target is DOWN"$N
-	fi
+ if ping -c1 $target &> /dev/null; then						#find out if the server is working
+  echo -e $G"$target is UP"$N
+  ip=`ping -c1 $target | head -1 | awk '{print $3}' | tr -d '()'`
+  curl https://ipapi.co/$ip/$exe/ >> $dir/ip.$exe; echo >> $dir/ip.$exe		#write information about target to file
+ else
+  echo -e $R"$target is DOWN"$N
+ fi
 done
 
-read -p "Input URL or IP address: " target						#add URL or IP address to get information
-ip=`ping -c1 $target | head -1 | awk '{print $3}' | tr -d '()'`				
-curl https://ipapi.co/$ip/$exe/ >> $dir/ip.$exe; echo >> $dir/ip.$exe			#adding information about target to file
+read -p "Input URL or IP address: " target					#add URL or IP address to get information
+ip=`ping -c1 $target | head -1 | awk '{print $3}' | tr -d '()'`			
+curl https://ipapi.co/$ip/$exe/ >> $dir/ip.$exe; echo >> $dir/ip.$exe		#adding information about target to file
 
 echo -e $G"DONE!" $Y"Inspect created $dir/ip.$exe file."$N
