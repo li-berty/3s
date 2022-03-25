@@ -15,7 +15,7 @@ echo -e $Y"Select Output File Format (json, by default):
 2 - csv
 3 - xml
 4 - yaml
----------------------------------------------"
+---------------------------------------------"$N
 read -s -n1 key
 
 if [[ $key = 1 ]]; then
@@ -30,7 +30,7 @@ elif [[ $key = 2 ]]; then
 	exe=json
 fi
 
-for target in `cat IP.list`
+for target in `cat $dir/IP.list`
 do  
 	if ping -c1 $target &> /dev/null; then
 		echo -e $G"$target is UP"$N
