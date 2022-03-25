@@ -41,4 +41,4 @@ done
 read -p "Input URL or IP address: " target; ip=`ping -c1 $target | head -1 | awk '{print $3}' | tr -d '()'`
 curl https://ipapi.co/$ip/$exe/ >> ip.$exe; echo >> ip.$exe
 
-echo -e $G"DONE!" $Y"Inspect your ip.$exe file ;)"$N
+echo -e $G"DONE!" $Y"Inspect created ip.$exe file."$N
