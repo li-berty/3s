@@ -7,7 +7,7 @@ WARNING :
 This tool is only for educational purpose.
 If you use this tool for other purposes except education,
 we will not be responsible in such cases.
-"
+"$N
 echo -e $Y"Select Output File Format (json, by default):
 1 - json
 2 - csv
@@ -31,11 +31,11 @@ fi
 for target in `cat IP.list`
 do  
 	if ping -c1 $target &> /dev/null; then
-		echo -e $G"$target is UP" $N
+		echo -e $G"$target is UP"$N
 		ip=`ping -c1 $target | head -1 | awk '{print $3}' | tr -d '()'`
 		curl https://ipapi.co/$ip/$exe/ >> ip.$exe; echo >> ip.$exe
 	else
-		echo -e $R"$target is DOWN" $N
+		echo -e $R"$target is DOWN"$N
 	fi
 done
 
