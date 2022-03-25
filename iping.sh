@@ -2,6 +2,8 @@
 
 clear
 R='\e[1;31m' G='\e[1;32m' Y='\e[1;33m' N='\e[0m'
+dir=`dirname $0`
+
 echo -e $R"
 WARNING :
 This tool is only for educational purpose.
@@ -33,13 +35,13 @@ do
 	if ping -c1 $target &> /dev/null; then
 		echo -e $G"$target is UP"$N
 		ip=`ping -c1 $target | head -1 | awk '{print $3}' | tr -d '()'`
-		curl https://ipapi.co/$ip/$exe/ >> ip.$exe; echo >> ip.$exe
+		curl https://ipapi.co/$ip/$exe/ >> $dir/ip.$exe; echo >> $dir/ip.$exe
 	else
 		echo -e $R"$target is DOWN"$N
 	fi
 done
 
 read -p "Input URL or IP address: " target; ip=`ping -c1 $target | head -1 | awk '{print $3}' | tr -d '()'`
-curl https://ipapi.co/$ip/$exe/ >> ip.$exe; echo >> ip.$exe
+curl https://ipapi.co/$ip/$exe/ >> $dir/ip.$exe; echo >> $dir/ip.$exe
 
-echo -e $G"DONE!" $Y"Inspect created ip.$exe file."$N
+echo -e $G"DONE!" $Y"Inspect created $dir/ip.$exe file."$N
