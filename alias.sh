@@ -8,6 +8,7 @@ cat  >> $set << 'EOF'
 # Alias definitions
 
 alias apt="sudo apt"
+alias aa='sudo apt-get autoremove'
 alias q!="exit"
 alias ?="pwd"
 alias hi="history |"
@@ -18,4 +19,4 @@ alias speed="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/maste
 
 EOF
 
-echo "Permanent executable aliases was created in fale $set"
+echo "Executable aliases was created in file $set"
