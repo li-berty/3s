@@ -7,8 +7,6 @@ set=~/.bash_aliases
 cat  >> $set << 'EOF'
 # Alias definitions
 
-alias apt="sudo apt"
-alias aa='sudo apt-get autoremove'
 alias q!="exit"
 alias ?="pwd"
 alias hi="history |"
