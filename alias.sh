@@ -7,6 +7,7 @@ set=~/.bash_aliases
 cat  >> $set << 'EOF'
 # Alias definitions
 
+alias ll="ls -aF"
 alias q!="exit"
 alias ?="pwd"
 alias hi="history |"
