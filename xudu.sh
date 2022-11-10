@@ -1,5 +1,5 @@
 #!/bin/bash
-#xudu (xdg-user-dirs-update) - set the user directories with the given names and update my directories configuration
+# xudu (xdg-user-dirs-update) - set the user directories with the given names and update my directories configuration
 
 mkdir -p ~/desktop ~/downloads ~/templates ~/public ~/documents ~/music ~/pictures ~/videos
 xdg-user-dirs-update --set DESKTOP ~/desktop
