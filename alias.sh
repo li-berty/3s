@@ -1,5 +1,5 @@
 #!/bin/bash
-# creating permanent executable aliases
+#creating permanent executable aliases
 
 set=~/.bash_aliases
 #set=/etc/bash.bashrc
