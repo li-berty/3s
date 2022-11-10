@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#check accessing from URL or IP list and get information about target
 clear
 R='\e[1;31m' G='\e[1;32m' Y='\e[1;33m' N='\e[0m'
 dir=`dirname $0`	#start script directory
