@@ -1,5 +1,5 @@
 #!/bin/bash
-#inc (identifying a card number) - checking issuing bank and bank identification number
+# inc (identifying a card number) - checking issuing bank and bank identification number
 
 R='\e[1;31m' G='\e[1;32m' Y='\e[1;33m' N='\e[0m'
 clear
