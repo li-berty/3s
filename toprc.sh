@@ -19,4 +19,4 @@ Usr	fieldscur=ċḊ§ẀẂḞṗṖẃÄÅ)+,-./1234568;<=>?@ABCFGHIJKLMNOPQRST
 Fixed_widest=0, Summ_mscale=1, Task_mscale=0, Zero_suppress=0
 EOF
 
-G='\e[1;32m' N='\e[0m'; echo -e $G"Created config file:$N ~/.config/procps/toprc"
+G='\e[1;32m' N='\e[0m'; echo -e $G"Created config file for top(table of processes):$N ~/.config/procps/toprc"
