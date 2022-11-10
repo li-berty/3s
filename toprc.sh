@@ -1,5 +1,5 @@
 #!/bin/bash
-# toprc.sh - creating top's config file (Hi, htop!)
+#toprc.sh - creating top's config file (Hi, htop!)
 
 cat  > ~/.config/procps/toprc << 'EOF'
 top's Config File (Linux processes with windows)
@@ -19,5 +19,4 @@ Usr	fieldscur=ċḊ§ẀẂḞṗṖẃÄÅ)+,-./1234568;<=>?@ABCFGHIJKLMNOPQRST
 Fixed_widest=0, Summ_mscale=1, Task_mscale=0, Zero_suppress=0
 EOF
 
-R='\e[1;31m' G='\e[1;32m' Y='\e[1;33m' N='\e[0m'
-echo -e $G"Created config file:$N ~/.config/procps/toprc"
+G='\e[1;32m' N='\e[0m'; echo -e $G"Created config file:$N ~/.config/procps/toprc"
