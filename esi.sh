@@ -1,5 +1,5 @@
 #!/bin/sh
-# esi - extract system information
+#esi - extract system information
 
 main()
 {
