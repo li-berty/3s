@@ -3,20 +3,21 @@
 
 cat  > ~/.config/procps/toprc << 'EOF'
 top's Config File (Linux processes with windows)
-Id:i, Mode_altscr=1, Mode_irixps=1, Delay_time=1.0, Curwin=2
-Def	fieldscur=Ä‹áº€Ä¡á¹€á¹ áº„Ã€Ã„á¹–áºƒá¹—Ã…&')*+,-./012568<>?ABCFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghij
-	winflags=195894, sortindx=18, maxtasks=0, graph_cpus=0, graph_mems=0
+Id:i, Mode_altscr=1, Mode_irixps=1, Delay_time=1.0, Curwin=3
+Def	fieldscur=¥¨³´»½ÀÄ·º¹Å&')*+,-./012568<>?ABCFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghij
+	winflags=195892, sortindx=18, maxtasks=0, graph_cpus=0, graph_mems=0
 	summclr=1, msgsclr=1, headclr=3, taskclr=1
-Job	fieldscur=Ä‹á¸Šá¹—á¹–áºƒ(Ä¡á¹€Ã„á¹ áº„@<Â§Ã…)*+,-./012568>?ABCFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghij
-	winflags=195894, sortindx=0, maxtasks=0, graph_cpus=0, graph_mems=0
+Job	fieldscur=¥¦¹·º(³´Ä»½@<§Å)*+,-./012568>?ABCFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghij
+	winflags=195892, sortindx=0, maxtasks=0, graph_cpus=0, graph_mems=0
 	summclr=6, msgsclr=6, headclr=7, taskclr=6
-Mem	fieldscur=Ä‹áºƒá¹ <áº„áº…á¹¡Ã€ÃMBNÃƒD34á¹–Ã…&'()*+,-./0125689FGHIJKLOPQRSTUVWXYZ[\]^_`abcdefghij
-	winflags=195894, sortindx=21, maxtasks=0, graph_cpus=0, graph_mems=0
+Mem	fieldscur=¥º»<½¾¿ÀÁMBNÃD34·Å&'()*+,-./0125689FGHIJKLOPQRSTUVWXYZ[\]^_`abcdefghij
+	winflags=195892, sortindx=21, maxtasks=0, graph_cpus=0, graph_mems=0
 	summclr=5, msgsclr=5, headclr=4, taskclr=5
-Usr	fieldscur=Ä‹á¸ŠÂ§áº€áº‚á¸žá¹—á¹–áºƒÃ„Ã…)+,-./1234568;<=>?@ABCFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghij
-	winflags=195894, sortindx=3, maxtasks=0, graph_cpus=0, graph_mems=0
+Usr	fieldscur=¥¦§¨ª°¹·ºÄÅ)+,-./1234568;<=>?@ABCFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghij
+	winflags=195892, sortindx=3, maxtasks=0, graph_cpus=0, graph_mems=0
 	summclr=3, msgsclr=3, headclr=2, taskclr=3
 Fixed_widest=0, Summ_mscale=1, Task_mscale=0, Zero_suppress=0
+
 EOF
 
 echo "Created config file for top/table of processes: ~/.config/procps/toprc"
