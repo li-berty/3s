@@ -19,7 +19,7 @@ alias wfp="sudo egrep -h -s -A 9 --color -T 'ssid=' /etc/NetworkManager/system-c
 alias speed="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -"
 
 # JOKES
-# alias cd="echo 'Stay at home, you retard! Permission denied:'"
+# alias cd="echo -e 'Stay at home, you retard!\nPermission denied:'"
 
 EOF
 
