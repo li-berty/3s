@@ -1,5 +1,5 @@
 # Desine sperare qui hic intras
-*Abandon All Hope, Ye Who Enter Here* :smile: :+1:
+*Abandon All Hope, Ye Who Enter Here*
 # 
 
 | Script | Description |
@@ -11,3 +11,4 @@
 | [IP-ping](iping.sh) | Check accessing from  URL or IP list and get information about target |
 | [Toprc](toprc.sh) | Creating top's config file (Hi, htop!) |
 | [Xdg-User-Dirs](xudu.sh) | Set the user directories with the given names |
+:smile: :+1:
